@@ -1,0 +1,138 @@
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing: border-box;
+}
+header{
+    display:flex;
+    justify-content: center;
+    background-color:black;
+}
+.main_ad{
+    background-image: url("IN-en-20240916-TRIFECTA-perspective_72df5d07-cf3f-4530-9afd-8f1d92d7f1a8_large.jpg");
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:1950px;
+}
+.mab{
+    width:100%;
+    height:100vh;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+}
+
+nav{
+    width:80%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:1;
+    max-width:1950;
+}
+nav span img{
+    width:200px;
+} 
+
+nav div{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex-wrap:nowrap;
+}
+@media screen and (max-width:800px) {
+    nav span img{
+        width:150px;
+    } 
+}
+@media screen and (max-width:500px) {
+    nav span img{
+        width:130px;
+    } 
+}
+.hm{
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+    color:white;
+    z-index:1;
+    width:40%; 
+    gap:35px;     
+    justify-items: center;
+    text-align: center;;
+    margin-top:85px;
+      
+}
+main{
+    height:1000px;
+    background-color:black;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    padding-left:10%;
+    padding-right:10%;
+
+
+}
+.slide1{
+  
+    overflow-x: auto;;
+    height:300px;
+    display:flex;
+    align-items: center;
+    padding-left:10px
+}
+.slide1 ul{
+    display:flex;
+    gap:60px
+}
+.slide1 img{
+    width:180px;
+    height:250px;
+    border-radius: 10px;
+  
+}
+.hm> :first-child{
+    font-weight: 400;
+    font-size: 50px;
+}
+.hm> :nth-child(2){
+    font-weight: 500;
+    font-size: 30px;
+}
+.hm>:nth-child(3){
+    font-weight: 200;
+    font-size: 15px;
+}
+.hm :nth-child(4){
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:40px;
+}
+.hm :last-child input{
+      width:60%;
+      min-width: 300px;
+      min-height:30px;
+}
+.hm :last-child button{
+    width:40%;
+    min-width: 120px;
+    min-height:30px;
+   display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hm :last-child{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
